@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListDataPulsa"
+    android:background="#a8a7ae">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="380dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="7dp"
+            android:text="LIST DATA TRANSAKSI PULSA"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_notes"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:textColor="#2E3019"
+        android:onClick="logout"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshapered"
+        android:shadowColor="#A85525"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="TAMBAH" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:onClick="logout"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FF267D"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshapered"
+        android:shadowColor="#A85525"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="LOGOUT" />
+
+</FrameLayout>

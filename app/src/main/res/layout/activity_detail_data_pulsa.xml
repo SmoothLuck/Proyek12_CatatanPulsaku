@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    tools:context=".DetailDataPulsa">
+
+        <LinearLayout
+            android:layout_width="375dp"
+            android:layout_height="1000dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_username"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#A52A2A"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_jumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="280dp"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:textColor="#2E3019"
+        android:onClick="logout"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshapered"
+        android:shadowColor="#A85525"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="UPDATE" />
+
+    <Button
+        android:id="@+id/hapus"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:onClick="hapus"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FF267D"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshapered"
+        android:shadowColor="#A85525"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="HAPUS" />
+</FrameLayout>
